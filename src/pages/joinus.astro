@@ -1,0 +1,148 @@
+---
+import Layout from "../layouts/Layout.astro";
+import MainContainer from "../layouts/MainContainter.astro";
+import Nav3 from "../components/Nav3.astro";
+import Footer from "../components/Footer.astro";
+// import Swiper from "../components/Swiper.jsx";
+---
+
+<Layout title="Join Us">
+  <MainContainer>
+    <Nav3 />
+
+    <h1 class="text-2xl md:text-5xl font-bold mb-4 mt-8 text-slate-600">
+      Join Us
+    </h1>
+    <h4 class="font-bold text-slate-600 mb-2 text-2xl">What to do?</h4>
+    <p class="text-slate-600 sm:text-lg mb-4">
+      Irish or not, dear reader, we urge you to join in the effort to keep the
+      apostrophe in Irish names. In addition to giving kudos and supporting
+      companies and services that accept correctly spelt names in the name
+      field, we urge you to:
+    </p>
+
+    <h4 class="font-bold text-slate-600 mb-2 text-2xl">1. Complain!</h4>
+    <p class="text-slate-600 sm:text-lg mb-4">
+      Call the offenders out! Write to your bank, retail store, airline, and any
+      other wayward entities and urge them to observe the proper spelling of
+      "database-challenged" Irish (and other) names.
+    </p>
+    <h4 class="font-bold text-slate-600 mb-2 text-2xl">2. Share your story</h4>
+    <p class="text-slate-600 sm:text-lg mb-4">
+      Pop over to our <a
+        href="https://www.facebook.com/keeptheapostrophe"
+        class="text-green-600 underline">facebook page</a
+      > and tell us about when the apostrophe in your name (or other reasons) caused
+      a computer to not accept your actual name.
+    </p>
+    <h4 class="font-bold text-slate-600 mb-2 text-2xl">3. Shop</h4>
+    <p class="text-slate-600 sm:text-lg mb-4">
+      Create awareness and help support the cause by buying and wearing our Ts
+      with pride. <a href="/shop" class="text-green-600 underline">Shop now</a>
+    </p>
+    <h4 class="font-bold text-slate-600 mb-2 text-2xl">4. Sign Up</h4>
+    <p class="text-slate-600 sm:text-lg mb-4">
+      Signup for our (very) infrequent emails. If we figure this thing you'll be
+      the first to know. If you have a solution - please share it!
+    </p>
+    <!-- <form name="contact" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="newsletter-signup" />
+      <div class="mb-4">
+        <label
+          for="full_name"
+          class="block text-base font-bold text-medium text-gray-700"
+          >Full Name</label
+        >
+        <input
+          type="text"
+          id="full_name"
+          name="full_name"
+          autocomplete="name"
+          required
+          class="mt-1 focus:ring-green-500 focus:border-green-500 block w-full shadow-sm border-2 p-2 border-gray-200 h-12 sm:text-lg rounded-md"
+        />
+      </div>
+      <div class="mb-4">
+        <label for="email" class="block text-base font-bold text-gray-700"
+          >Email Address</label
+        >
+        <input
+          type="email"
+          id="email"
+          name="email"
+          autocomplete="email"
+          required
+          class="mt-1 focus:ring-green-500 focus:border-green-500 block w-full shadow-sm border-2 p-2 border-gray-200 h-12 sm:text-lg rounded-md"
+        />
+      </div>
+       Honeypot field to catch spammers 
+      <div style="display: none;">
+        <label
+          >Don’t fill this out if you're human: <input
+            name="bot-field"
+          /></label
+        >
+      </div>
+      <div class="mt-4">
+        <button
+          type="submit"
+          class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-green-600 text-lg font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+        >
+          Subscribe
+        </button>
+      </div>
+    </form> -->
+
+    <div>
+      <form name="contact" method="POST" data-netlify="true">
+        <p>
+          <label class="block text-base font-bold text-medium text-gray-700"
+            >Your Name</label
+          >
+          <input
+            type="text"
+            name="name"
+            class="mt-1 mb-8 focus:ring-green-500 focus:border-green-500 block w-full shadow-sm border-2 p-2 border-gray-200 h-12 sm:text-lg rounded-md"
+          />
+        </p>
+        <p>
+          <label class="block text-base font-bold text-medium text-gray-700"
+            >Your Email</label
+          >
+          <input
+            type="email"
+            name="email"
+            class="mt-1 mb-8 focus:ring-green-500 focus:border-green-500 block w-full shadow-sm border-2 p-2 border-gray-200 h-12 sm:text-lg rounded-md"
+          />
+        </p>
+        <div class="hidden">
+          <label
+            >Don’t fill this out if you're human: <input
+              name="bot-field"
+            /></label
+          >
+        </div>
+        <!-- <p>
+          <label
+            >Your Role: <select name="role[]" multiple>
+              <option value="leader">Leader</option>
+              <option value="follower">Follower</option>
+            </select></label
+          >
+        </p> -->
+        <!-- <p>
+          <label>Message: <textarea name="message"></textarea></label>
+        </p> -->
+        <p>
+          <button
+            type="submit"
+            class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-green-600 text-lg font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 mb-12"
+            >Subscribe</button
+          >
+        </p>
+      </form>
+    </div>
+
+    <Footer />
+  </MainContainer>
+</Layout>

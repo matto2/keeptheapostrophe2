@@ -1,0 +1,79 @@
+---
+import Layout from "../layouts/Layout.astro";
+import MainContainer from "../layouts/MainContainter.astro";
+import Nav2 from "../components/Nav2.astro";
+// import Swiper from "../components/Swiper.jsx";
+---
+
+<Layout title="Shop">
+  <MainContainer>
+    <Nav2 />
+
+    <h1 class="text-2xl md:text-5xl font-bold mb-4 mt-8 text-slate-600">
+      Shop
+    </h1>
+
+    <div class="md:flex md:flex-row">
+      <div>
+        <p class="text-slate-600 sm:text-lg mb-4">
+          <img
+            src="/matt-fighting-the-good-fight.jpg"
+            class="min-w-80 rounded-xl mr-6"
+            alt="dad pic"
+          />
+        </p>
+      </div>
+      <div>
+        <p class="text-slate-600 sm:text-lg mb-4 ml-6">
+          Pre-shrunk 100% cotton 6 ounce tee. Double-needle stitched neckline,
+          sleeve and bottom hem. Shoulder-to-shoulder taping. Seamless 7/8"
+          collar. Satin label. Free sticker with every order (while supplies
+          last).
+        </p>
+      </div>
+    </div>
+
+    <!-- <div class="border-b border-gray-200 mb-6 mt-4"></div> -->
+
+    <!-- <Swiper client:load /> -->
+    <!-- <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+
+    <stripe-buy-button
+      buy-button-id="buy_btn_1Ol2zXFU2Kpk8ki6kSwM2SKS"
+      publishable-key="pk_live_Eyaq8S2Wumx9FxFcQ95iIwol"
+    >
+    </stripe-buy-button> -->
+    <p class="font-bold">Select size:</p>
+    <a
+      href="https://buy.stripe.com/14keXI7tke6Ve1q8wK"
+      class="text-green-600 mr-6 underline">Small</a
+    >
+    <a
+      href="https://buy.stripe.com/5kA6rc00SfaZe1q9AN"
+      class="text-green-600 mr-6
+      underline">Large</a
+    >
+    <a
+      href="https://buy.stripe.com/eVa9Do2904wl3mMdR5"
+      class="text-green-600 mr-6
+    underline">X-Large</a
+    >
+    <a
+      href="https://buy.stripe.com/00gcPA00SaUJaPe3cs"
+      class="text-green-600 mr-6
+  underline">2XL</a
+    >
+    <img src="/green.png" class="max-w-80 rounded-xl mr-6" alt="t-shirt pic" />
+
+    <div class="border-b border-gray-200 mb-6 mt-4"></div>
+
+    <p class="text-slate-600 sm:text-lg mb-4">
+      <strong
+        >Questions/Comments? <a
+          href="mailto:mattosurf@gmail.com"
+          class="text-green-600 underline">Email us</a
+        ></strong
+      >
+    </p>
+  </MainContainer>
+</Layout>
