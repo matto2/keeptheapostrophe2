@@ -5,6 +5,8 @@ import Nav2 from "../components/Nav2.astro";
 // import Swiper from "../components/Swiper.jsx";
 ---
 
+<script async src="https://js.stripe.com/v3/buy-button.js"></script>;
+
 <Layout title="Shop">
   <MainContainer>
     <Nav2 />
@@ -36,15 +38,49 @@ import Nav2 from "../components/Nav2.astro";
     <!-- <div class="border-b border-gray-200 mb-6 mt-4"></div> -->
 
     <!-- <Swiper client:load /> -->
-    <!-- <script async src="https://js.stripe.com/v3/buy-button.js"></script>
 
-    <stripe-buy-button
-      buy-button-id="buy_btn_1Ol2zXFU2Kpk8ki6kSwM2SKS"
-      publishable-key="pk_live_Eyaq8S2Wumx9FxFcQ95iIwol"
-    >
-    </stripe-buy-button> -->
     <p class="font-bold">Select size:</p>
-    <a
+    <!-- small -->
+    <div class="mt-4 mb-4">
+      <stripe-buy-button
+        buy-button-id="buy_btn_1Ol38gFU2Kpk8ki6JQ6cyISK"
+        publishable-key="pk_live_Eyaq8S2Wumx9FxFcQ95iIwol"
+      >
+      </stripe-buy-button>
+    </div>
+    <!-- medium -->
+    <div class="mt-4 mb-4">
+      <stripe-buy-button
+        buy-button-id="buy_btn_1OlEjzFU2Kpk8ki6hMfAt0jP"
+        publishable-key="pk_live_Eyaq8S2Wumx9FxFcQ95iIwol"
+      >
+      </stripe-buy-button>
+    </div>
+    <!-- large -->
+    <div class="mt-4 mb-4">
+      <stripe-buy-button
+        buy-button-id="buy_btn_1Ol2zXFU2Kpk8ki6kSwM2SKS"
+        publishable-key="pk_live_Eyaq8S2Wumx9FxFcQ95iIwol"
+      >
+      </stripe-buy-button>
+    </div>
+    <!-- xl -->
+    <div class="mt-4 mb-4">
+      <stripe-buy-button
+        buy-button-id="buy_btn_1OlErMFU2Kpk8ki6kAsyszk4"
+        publishable-key="pk_live_Eyaq8S2Wumx9FxFcQ95iIwol"
+      >
+      </stripe-buy-button>
+    </div>
+    <!-- 2xl -->
+    <div class="mt-4 mb-4">
+      <stripe-buy-button
+        buy-button-id="buy_btn_1OlEuEFU2Kpk8ki6m9RcBAQg"
+        publishable-key="pk_live_Eyaq8S2Wumx9FxFcQ95iIwol"
+      >
+      </stripe-buy-button>
+    </div>
+    <!-- <a
       href="https://buy.stripe.com/14keXI7tke6Ve1q8wK"
       class="text-green-600 mr-6 underline">Small</a
     >
@@ -62,8 +98,8 @@ import Nav2 from "../components/Nav2.astro";
       href="https://buy.stripe.com/00gcPA00SaUJaPe3cs"
       class="text-green-600 mr-6
   underline">2XL</a
-    >
-    <img src="/green.png" class="max-w-80 rounded-xl mr-6" alt="t-shirt pic" />
+    > -->
+    <!-- <img src="/green.png" class="max-w-80 rounded-xl mr-6" alt="t-shirt pic" /> -->
 
     <div class="border-b border-gray-200 mb-6 mt-4"></div>
 
