@@ -3,6 +3,7 @@ interface Props {
   title: string;
 }
 const { title } = Astro.props;
+import { AstroSeo } from "@astrolib/seo";
 ---
 
 <!doctype html>
@@ -16,6 +17,33 @@ const { title } = Astro.props;
 
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <AstroSeo
+      title="Keep the Apostrophe in Irish Names"
+      description="If you've ever been told you have invalid characters in your name (Irish or not) this site is for you! Software and forms should be built to accomodate real human names rather than the other way around. Share your story, learn what you can do, and shop our site to help support the cause."
+      openGraph={{
+        url: "https:keeptheapostrophe.com",
+        title: "Keep the Apostrophe in Irish Names",
+        description:
+          "Software and forms should be built to accomodate real human names rather than the other way around.",
+        images: [
+          {
+            url: "https://keeptheapostrophe.com/matt-fighting-the-good-fight.jpg",
+            width: 407,
+            height: 377,
+            alt: "Keep the Apostrophe in Irish Names",
+            type: "image/jpeg",
+          },
+          {
+            url: "https://keeptheapostrophe.com/mkeep-the-apostrophe_sticker.png",
+            width: 230,
+            height: 230,
+            alt: "Keep the Apostrophe in Irish Names",
+            type: "image/png",
+          },
+        ],
+        site_name: "KeepTheApostrophe",
+      }}
+    />
   </head>
   <body class="bg-white">
     <slot />
